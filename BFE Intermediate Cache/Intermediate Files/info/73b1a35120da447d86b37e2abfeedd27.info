@@ -1,0 +1,6 @@
+hidden = false
+name = "Bunkers for everyone!"
+description = "By request:\n\nSoviet Combat Engineers can now build DShK-38 MG emplacements.\nOKW Sturmpioneers can now build Bunkers that can be upgraded with an MG 42.\nBritish Sappers can now build Vickers K MG emplacements. These have the \"Brace\" ability and should be affected by all emplacement-related abilities."
+dependencies = 
+{
+}

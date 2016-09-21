@@ -1,0 +1,43 @@
+Archive name="73b1a35120da447d86b37e2abfeedd27" blocksize="262144"
+TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
+	FileSettingsStart defverification="sha1_blocks" defcompression="stream_compress"
+		Override wildcard=".*\.(rgd)$" minsize="-1" maxsize="-1" vt="sha1_blocks" ct="buffer_compress"
+	FileSettingsEnd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\british_mg_nest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\british_mg_nest_commander.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\okw_mg_bunker.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\soviet_mg_nest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\british_mg_nest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\british\soldiers\sapper_squad\sapper_squad_mp.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\british\soldiers\tommy_squad\tommy_squad_mp.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad_mp.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\west_german\soldiers\assault_pioneer_squad\assault_pioneer_squad_mp.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\dshk38_mgnest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\mg42_mgnest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\vickers_k_mgnest.rgd
+TOCEnd
+TOCStart name="locale" alias="locale" path="" relativeroot="locale"
+	FileSettingsStart defverification="crc_blocks" defcompression="stream_compress"
+	FileSettingsEnd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\locale\english\english.ucs
+TOCEnd
+TOCStart name="info" alias="info" path="" relativeroot="info"
+	FileSettingsStart defverification="crc_blocks" defcompression="stream_compress"
+		Override wildcard=".*\.(lua)$" minsize="-1" maxsize="-1" vt="crc_blocks" ct="buffer_compress"
+	FileSettingsEnd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\info\73b1a35120da447d86b37e2abfeedd27.info
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\info\preview.tga
+TOCEnd
+TOCStart name="data" alias="data" path="" relativeroot="data"
+	FileSettingsStart defverification="sha1_blocks" defcompression="stream_compress"
+		Override wildcard=".*\.(rgt|ttf)$" minsize="-1" maxsize="-1" vt="none" ct="store"
+		Override wildcard=".*\.(abp)$" minsize="-1" maxsize="-1" vt="none" ct="buffer_compress"
+		Override wildcard=".*\.(dds|mua|muax|rpb|sua|tga)$" minsize="-1" maxsize="-1" vt="none" ct=""
+		Override wildcard=".*\.(gfx)$" minsize="-1" maxsize="-1" vt="sha1_blocks" ct=""
+		Override wildcard=".*\.(ai|events|info|lua|options|scar|scenref|squadai)$" minsize="-1" maxsize="-1" vt="sha1_blocks" ct="buffer_compress"
+		Override wildcard=".*\.(scenariomarker|sgb|ter|sme|exclude|path)$" minsize="-1" maxsize="-1" vt="crc_blocks" ct=""
+		Override wildcard=".*\.(smf)$" minsize="-1" maxsize="-1" vt="none" ct="store"
+		Override wildcard=".*\.(bsc)$" minsize="-1" maxsize="-1" vt="none" ct="buffer_compress"
+	FileSettingsEnd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\data\art\armies\german\structures\bunker\bunker.abp
+TOCEnd

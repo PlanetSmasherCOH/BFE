@@ -1,0 +1,104 @@
+<instance override_type="merge" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext">
+			<float name="construction_rate_multiplier" value="1" />
+			<list name="in_construction_actions">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="2" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073741827" />
+				</template_reference>
+			</list>
+			<list name="construction_groups">
+				<group name="construction_group">
+					<instance_reference name="construction_menu" value="construction_menu\basic" />
+					<list name="construction_items">
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\gameplay\buildable_campfire_mp" />
+							<int name="ui_position" value="14" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\soviet_mine_mp" />
+							<int name="ui_position" value="11" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\team_weapons\soviet_field_artillery\m1937_152mm_ml_20_artillery_mp" />
+							<int name="ui_position" value="13" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\barbed_wire_fence_mp" />
+							<int name="ui_position" value="12" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\team_weapons\soviet_field_artillery\m1931_203mm_b-4_howitzer_artillery_commander_mp" />
+							<int name="ui_position" value="0" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\repair_station_mp" />
+							<int name="ui_position" value="21" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\tanktrap" />
+							<int name="ui_position" value="13" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\anti_personnel_mines" />
+							<int name="ui_position" value="21" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\light_anti_vehicle_mines" />
+							<int name="ui_position" value="22" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\soviet_mg_nest" mod="73b1a35120da447d86b37e2abfeedd27" />
+							<int name="ui_position" value="21" />
+						</group>
+					</list>
+					<enum name="construction_type" value="tp_construction_soviet_engineer_basic" />
+				</group>
+				<group name="construction_group">
+					<instance_reference name="construction_menu" value="construction_menu\advanced" />
+					<list name="construction_items">
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\base_building\motorpool_mp" />
+							<int name="ui_position" value="13" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" />
+							<int name="ui_position" value="14" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\base_building\barracks_mp" />
+							<int name="ui_position" value="11" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" />
+							<int name="ui_position" value="12" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\observation_post\observation_post_fuel_mp" />
+							<int name="ui_position" value="22" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\observation_post\observation_post_munition_mp" />
+							<int name="ui_position" value="21" />
+						</group>
+					</list>
+					<enum name="construction_type" value="tp_construction_soviet_engineer" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="104" />
+</instance>
