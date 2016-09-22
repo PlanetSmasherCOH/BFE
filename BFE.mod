@@ -37,11 +37,19 @@
 			<Children>
 				<d2p1:anyType i:type="BurnModInfo">
 					<Dependencies />
-					<Description>By request:
+					<Description>A little mod I made by request.
 
-Soviet Combat Engineers can now build DShK-38 MG emplacements.
-OKW Sturmpioneers can now build Bunkers that can be upgraded with an MG 42.
-British Sappers can now build Vickers K MG emplacements. These have the "Brace" ability and should be affected by all emplacement-related abilities.</Description>
+Soviet Combat Engineers can now build DShK-38 MG emplacements for 150MP/80Mu.
+
+OKW Sturmpioneers can now build MG 42 Concrete Bunkers (CoH1 style!) for 200MP/60Mu.
+
+British Sappers can now build Vickers K MG emplacements for 200MP/60Mu.
+Unlike other British emplacements, these don't have the Brace ability, don't get a bonus from the Forward Assembly, don't get veterancy and can't be garrisoned. With the Advanced Emplacement Regiment, they can be built by Tommies as well, but they don't get the Improved Fortifications (durability) upgrade. They are affected by the Royal Engineer Regiment's Stand Fast ability (global auto-repair), though.
+
+To do:
+Better descriptions and help texts.
+Some minor weapon and health balancing.
+MAYBE turning the British MG emplacement into a "proper" emplacement with all the bells and whistles. Might be totally OP, though!</Description>
 					<Hidden>false</Hidden>
 					<Name>Bunkers for everyone!</Name>
 				</d2p1:anyType>

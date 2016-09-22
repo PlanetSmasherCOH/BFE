@@ -39,7 +39,7 @@
 			</list>
 			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="2" />
+			<float name="target_size" value="26" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -89,11 +89,11 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\line_of_sight_ext">
 			<group name="blocking_box">
-				<float name="x" value="5" />
-				<float name="y" value="5" />
-				<float name="z" value="5" />
+				<float name="x" value="0.01" />
+				<float name="y" value="0.01" />
+				<float name="z" value="0.01" />
 			</group>
-			<bool name="is_shot_blocking" value="False" />
+			<bool name="is_shot_blocking" value="True" />
 			<bool name="use_blocking_box" value="False" />
 			<enum name="does_block_line_of_sight" value="Never" />
 		</template_reference>
@@ -114,8 +114,8 @@
 				<enum name="unit_type01" value="defence_building" />
 				<enum name="unit_type02" value="tactical_structure" />
 				<enum name="unit_type03" value="dshk" />
-				<enum name="unit_type04" value="" />
-				<enum name="unit_type05" value="" />
+				<enum name="unit_type04" value="hmgs" />
+				<enum name="unit_type05" value="hmg_soviet" />
 				<enum name="unit_type06" value="" />
 				<enum name="unit_type07" value="" />
 				<enum name="unit_type08" value="" />
@@ -135,7 +135,7 @@
 			<float name="cancel_refund_percentage" value="100" />
 			<bool name="check_terrain" value="True" />
 			<string name="construction_state_name" value="Shovel_digin_State" />
-			<float name="construction_transition_time" value="1.36667" />
+			<float name="construction_transition_time" value="1.36666" />
 			<bool name="force_construction" value="False" />
 			<float name="max_engineers" value="8" />
 			<bool name="must_be_in_command_territory" value="False" />
@@ -143,7 +143,7 @@
 			<bool name="must_be_in_supply_territory" value="True" />
 			<bool name="must_be_in_territory" value="False" />
 			<bool name="must_be_on" value="False" />
-			<bool name="must_not_be_in_walkable_surfaces" value="True" />
+			<bool name="must_not_be_in_walkable_surfaces" value="False" />
 			<instance_reference name="on_construction_squad" value="" />
 			<float name="orientation" value="0" />
 			<enum name="placement_type" value="tp_structure" />
@@ -186,9 +186,11 @@
 					<instance_reference name="weapon" value="weapon\dshk38_mgnest" mod="73b1a35120da447d86b37e2abfeedd27" />
 					<uniqueid name="id" value="1073741877" />
 				</template_reference>
-				<template_reference name="action" value="action\add_crew_action">
+				<template_reference name="action" value="action\apply_crew_action">
+					<bool name="apply_removal" value="False" />
 					<string name="crew_name" value="Gunner" />
-					<uniqueid name="id" value="1073741824" />
+					<bool name="kill" value="False" />
+					<uniqueid name="id" value="1073741879" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -221,7 +223,7 @@
 					<float name="munition" value="80" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="90" />
+				<float name="time_seconds" value="120" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">
@@ -238,12 +240,12 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="1.5" />
+			<float name="reveal_area_on_death_time" value="6" />
 			<group name="sight_package">
-				<float name="inner_height" value="7" />
+				<float name="inner_height" value="3" />
 				<float name="inner_radius" value="10" />
-				<float name="outer_height" value="-4" />
-				<float name="outer_radius" value="45" />
+				<float name="outer_height" value="-6" />
+				<float name="outer_radius" value="35" />
 				<float name="cone_angle" value="360" />
 				<float name="cone_start_radius" value="0" />
 			</group>
@@ -435,7 +437,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
-			<bool name="reject_attack_command" value="True" />
+			<bool name="reject_attack_command" value="False" />
 			<list name="hardpoints">
 				<group name="hardpoint">
 					<float name="parent_hardpoint" value="-1" />
@@ -471,7 +473,7 @@
 							<instance_reference name="weapon" value="weapon\dshk38_mgnest" mod="73b1a35120da447d86b37e2abfeedd27" />
 						</group>
 					</list>
-					<bool name="receives_attack_commands" value="False" />
+					<bool name="receives_attack_commands" value="True" />
 				</group>
 			</list>
 			<int name="sight_hardpoint" value="-1" />
@@ -503,7 +505,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
-			<enum name="cover_type" value="tp_heavy" />
+			<enum name="cover_type" value="tp_garrison_cover" />
 			<bool name="is_cover_directional" value="False" />
 			<bool name="is_shoot_through" value="False" />
 			<bool name="lengthwise_spots" value="False" />
@@ -511,30 +513,25 @@
 			<float name="offset_y" value="0" />
 			<float name="offset_z" value="0" />
 			<bool name="prevent_prone" value="False" />
-			<float name="range_x" value="5" />
+			<float name="range_x" value="6" />
 			<float name="range_y" value="5" />
-			<float name="range_z" value="5" />
+			<float name="range_z" value="6" />
 			<bool name="require_standing" value="False" />
 			<bool name="use_simbox_range" value="True" />
 			<bool name="use_simbox_range_plus_spots" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\upgrade_ext">
-			<bool name="must_be_in_supply" value="False" />
-			<float name="number_of_standard_slots" value="1" />
+			<bool name="must_be_in_supply" value="True" />
+			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
 			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\population_ext">
-			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="0" />
-			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hold_ext">
 			<group name="acceptable_types">
 				<enum name="acceptable_type_01" value="hold_infantry" />
 				<enum name="acceptable_type_02" value="hold_sniper" />
 				<enum name="acceptable_type_03" value="hold_heavy_machine_gun" />
-				<enum name="acceptable_type_04" value="" />
+				<enum name="acceptable_type_04" value="hold_aef_officer" />
 				<enum name="acceptable_type_05" value="" />
 			</group>
 			<bool name="attach_passenger_animator" value="False" />

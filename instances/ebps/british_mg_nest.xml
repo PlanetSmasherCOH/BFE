@@ -17,10 +17,10 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="25" />
+			<float name="death_seconds" value="1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="640" />
+			<float name="hitpoints" value="480" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -37,7 +37,7 @@
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="35" />
+			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
 			<float name="target_size" value="26" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -98,7 +98,7 @@
 			<enum name="does_block_line_of_sight" value="Never" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\site_ext">
-			<float name="extra_build_test_footprint" value="2" />
+			<float name="extra_build_test_footprint" value="1" />
 			<bool name="require_all_cells_clear" value="True" />
 			<bool name="snap_to_terrain" value="False" />
 			<bool name="ignore_impass" value="False" />
@@ -129,7 +129,7 @@
 			<bool name="automatic_fit_on_placement" value="True" />
 			<bool name="can_set_facing" value="True" />
 			<float name="cancel_refund_percentage" value="100" />
-			<bool name="check_terrain" value="False" />
+			<bool name="check_terrain" value="True" />
 			<string name="construction_state_name" value="Shovel_digin_State" />
 			<float name="construction_transition_time" value="1.36666" />
 			<bool name="force_construction" value="False" />
@@ -152,16 +152,36 @@
 			<float name="spacing_distance" value="0" />
 			<bool name="self_construct" value="False" />
 			<list name="on_construction_actions">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="35" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.5" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073741880" />
+				</template_reference>
 				<template_reference name="action" value="action\apply_crew_action">
 					<bool name="apply_removal" value="False" />
 					<string name="crew_name" value="Gunner" />
 					<bool name="kill" value="False" />
 					<uniqueid name="id" value="1073741830" />
-				</template_reference>
-				<template_reference name="action" value="action\upgrade_remove">
-					<bool name="apply_to_entities_in_squad" value="True" />
-					<instance_reference name="upgrade" value="upgrade\is_manned" />
-					<uniqueid name="id" value="1073741861" />
 				</template_reference>
 				<template_reference name="action" value="action\change_weapon">
 					<float name="hardpoint" value="1" />
@@ -192,17 +212,12 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="250" />
+					<float name="manpower" value="200" />
 					<float name="munition" value="60" />
 					<float name="popcap" value="0" />
 				</group>
 				<float name="time_seconds" value="120" />
 			</group>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\demolishable_ext">
-			<bool name="detonate_requires_fully_wired" value="False" />
-			<bool name="prevent_detonation_effects" value="False" />
-			<bool name="wire_all_points" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">
 			<bool name="cant_build" value="True" />
@@ -424,7 +439,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
-			<bool name="reject_attack_command" value="True" />
+			<bool name="reject_attack_command" value="False" />
 			<list name="hardpoints">
 				<group name="hardpoint">
 					<float name="parent_hardpoint" value="-1" />
@@ -460,7 +475,7 @@
 							<instance_reference name="weapon" value="weapon\vickers_k_mgnest" mod="73b1a35120da447d86b37e2abfeedd27" />
 						</group>
 					</list>
-					<bool name="receives_attack_commands" value="False" />
+					<bool name="receives_attack_commands" value="True" />
 				</group>
 			</list>
 			<int name="sight_hardpoint" value="-1" />
@@ -468,10 +483,9 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\upgrade_ext">
-			<bool name="must_be_in_supply" value="False" />
+			<bool name="must_be_in_supply" value="True" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\items\improved_fortifcation_squad" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\crew_ext">
@@ -514,15 +528,7 @@
 			<bool name="use_simbox_range" value="True" />
 			<bool name="use_simbox_range_plus_spots" value="False" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ability_ext">
-			<list name="abilities">
-			</list>
-		</template_reference>
 		<template_reference name="exts" value="ebpextensions\modifier_ext">
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\requirement_ext">
-			<list name="requirement_table">
-			</list>
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741824" />
