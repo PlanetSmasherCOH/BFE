@@ -163,21 +163,10 @@
 					<instance_reference name="upgrade" value="upgrade\is_manned" />
 					<uniqueid name="id" value="1073741861" />
 				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="ready" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="pintle_vickers_k_state" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073741864" />
-				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="on" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="pintle_vickers_k_visibility" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073741866" />
+				<template_reference name="action" value="action\change_weapon">
+					<float name="hardpoint" value="1" />
+					<instance_reference name="weapon" value="weapon\vickers_k_mgnest" mod="73b1a35120da447d86b37e2abfeedd27" />
+					<uniqueid name="id" value="1073741878" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -432,22 +421,6 @@
 					</list>
 					<uniqueid name="id" value="1073741857" />
 				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="off" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="pintle_vickers_k_visibility" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073741865" />
-				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="invisible" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="pintle_vickers_k_state" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073741863" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
@@ -456,6 +429,21 @@
 				<group name="hardpoint">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2.2" />
+								<float name="z" value="0.9" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\heavy_machine_gun\mgnest_mg42t_dummy_mp" />
+						</group>
 						<group name="weapon">
 							<group name="heading">
 								<float name="x" value="0" />

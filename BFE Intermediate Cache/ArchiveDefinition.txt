@@ -13,7 +13,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad_mp.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\west_german\soldiers\assault_pioneer_squad\assault_pioneer_squad_mp.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\dshk38_mgnest.rgd
-	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\mg42_mgnest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\mg42_mgbunker.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\vickers_k_mgnest.rgd
 TOCEnd
 TOCStart name="locale" alias="locale" path="" relativeroot="locale"

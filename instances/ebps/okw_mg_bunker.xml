@@ -185,6 +185,17 @@
 					</list>
 					<uniqueid name="id" value="1073741867" />
 				</template_reference>
+				<template_reference name="action" value="action\change_weapon">
+					<float name="hardpoint" value="1" />
+					<instance_reference name="weapon" value="weapon\mg42_mgbunker" mod="73b1a35120da447d86b37e2abfeedd27" />
+					<uniqueid name="id" value="1073741876" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_crew_action">
+					<bool name="apply_removal" value="False" />
+					<string name="crew_name" value="Gunner" />
+					<bool name="kill" value="False" />
+					<uniqueid name="id" value="1073741873" />
+				</template_reference>
 			</list>
 			<list name="materials">
 				<instance_reference name="material" value="material\ice" />
@@ -381,7 +392,22 @@
 								<float name="z" value="2.5" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\mg42_mgnest" mod="73b1a35120da447d86b37e2abfeedd27" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\heavy_machine_gun\mgnest_mg42t_dummy_mp" />
+						</group>
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="2.5" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\mg42_mgbunker" mod="73b1a35120da447d86b37e2abfeedd27" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="True" />
@@ -400,9 +426,9 @@
 		<template_reference name="exts" value="ebpextensions\crew_ext">
 			<list name="race_list">
 				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\west_german" />
+					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
+						<string name="sync_target_name" value="HeavyMachineGun_Target" />
 						<list name="role_list">
 							<group name="role">
 								<string name="animator_bp" value="armies\german\soldiers\hmg\hmg" />
@@ -410,7 +436,7 @@
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="Gunner" />
 								<string name="sync_action_name" value="HMG_Attach_Skeleton" />
-								<bool name="sync_on_create" value="True" />
+								<bool name="sync_on_create" value="False" />
 								<string name="abandon_event_name" value="" />
 								<string name="animator_bp_female" value="" />
 							</group>
