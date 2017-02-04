@@ -7,19 +7,27 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\ebps\british_mg_nest.xml</FileName>
-			<FileHash>5b204fe7bf40fd129b1b58b07950955a</FileHash>
+			<FileHash>f71248795e2f888848ce571fe0a9816e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\ebps\british_mg_nest_commander.xml</FileName>
-			<FileHash>07afc41a9452d5548839d72aa71f04c8</FileHash>
+			<FileHash>1a5651882f00d5f069f922d32e39cb84</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\ebps\okw_mg_bunker.xml</FileName>
-			<FileHash>d7dd13e800a7899c6b56d482bd912494</FileHash>
+			<FileHash>57e8e5ba00db9e44d5bc281d7d700121</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\ebps\soviet_mg_nest.xml</FileName>
-			<FileHash>60a68c161d0a9e65330f9d6e9dda6144</FileHash>
+			<FileHash>061f2ab6dfe32c2c58fa39e253435630</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\ebps\races\aef\buildings\defensive_structures\fighting_position\fighting_position_mp.xml</FileName>
+			<FileHash>8b95a0148b1fc747ebab78910d35f241</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\ebps\races\aef\buildings\defensive_structures\fighting_position\fighting_position_riflemen_mp.xml</FileName>
+			<FileHash>835c18a58449ef143daf06ce94e97361</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\sbps\british_mg_nest.xml</FileName>
@@ -42,24 +50,44 @@
 			<FileHash>af954b4f66b93417f4863710d28cc140</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\upgrade\aef\items\fighting_position_mg_addition_mp.xml</FileName>
+			<FileHash>db4ddc243c3fa23e23e3b42b6dfe352d</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\weapon\dshk38_mgnest.xml</FileName>
-			<FileHash>bdc26ee48f2fb0e2f072828708886d20</FileHash>
+			<FileHash>be31c74a21fca6b502a687a600bb3cdc</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\weapon\mg34_mgbunker.xml</FileName>
+			<FileHash>ed3a40df9dc1e898c36df88b6594a32f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\weapon\mg42_mgbunker.xml</FileName>
-			<FileHash>29e95dd48388a019f074fc28db4d81d8</FileHash>
+			<FileHash>ad58a48450acf67894f995378affe908</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\weapon\vickers_k_mgnest.xml</FileName>
-			<FileHash>90493d1e0bb4e4685008bdeb4f07a717</FileHash>
+			<FileHash>1052e5957aa978d9326d12735fcf7929</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_fighting_position_mp.xml</FileName>
+			<FileHash>c39917bbc3255304799103a59da358c0</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\weapon\axis\small_arms\machine_gun\heavy_machine_gun\bunker_mg42_mp.xml</FileName>
+			<FileHash>178142aadac86688774ac7c38f41779e</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>E:\Spiele\CoH2-Mods\BFE\instances\weapon\west_german\ballistic_weapon\tank_gun\hetzer_75mm.xml</FileName>
+			<FileHash>ab5c3c33858c712e7a190f3ec1a3b60f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\locale\english\english.ucs</FileName>
-			<FileHash>9daa5f69e179f0256ec0d7fd81a1438b</FileHash>
+			<FileHash>0a6cd91b797728e7274a630e994ee1e2</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\info\73b1a35120da447d86b37e2abfeedd27.info</FileName>
-			<FileHash>4d508cf4fb96d81f62ed210b79e03f86</FileHash>
+			<FileHash>80e7047a8757ec7d909d59c49697098f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\preview.tga</FileName>
@@ -67,7 +95,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>E:\Spiele\CoH2-Mods\BFE\data\art\armies\german\structures\bunker\bunker.abp</FileName>
-			<FileHash>5f4f734453ce37ca72b54a04c6928f46</FileHash>
+			<FileHash>fc45e105e89c0a63f3b85a6a77867fd6</FileHash>
 		</BurnInfo>
 	</BurnInfo>
 	<BurnInfoExtendedInfo />

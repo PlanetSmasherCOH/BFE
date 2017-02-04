@@ -220,10 +220,10 @@
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="150" />
-					<float name="munition" value="80" />
+					<float name="munition" value="90" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="120" />
+				<float name="time_seconds" value="80" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">
@@ -320,7 +320,7 @@
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_building_soviet_mg_nest_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="6" mod="73b1a35120da447d86b37e2abfeedd27" />
+			<locstring name="extra_text" value="14" mod="73b1a35120da447d86b37e2abfeedd27" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />

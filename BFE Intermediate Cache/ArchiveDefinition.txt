@@ -7,14 +7,21 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\british_mg_nest_commander.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\okw_mg_bunker.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\soviet_mg_nest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\buildings\defensive_structures\fighting_position\fighting_position_mp.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\buildings\defensive_structures\fighting_position\fighting_position_riflemen_mp.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\british_mg_nest.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\british\soldiers\sapper_squad\sapper_squad_mp.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\british\soldiers\tommy_squad\tommy_squad_mp.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad_mp.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\west_german\soldiers\assault_pioneer_squad\assault_pioneer_squad_mp.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\fighting_position_mg_addition_mp.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\dshk38_mgnest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\mg34_mgbunker.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\mg42_mgbunker.rgd
 	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\vickers_k_mgnest.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_fighting_position_mp.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\small_arms\machine_gun\heavy_machine_gun\bunker_mg42_mp.rgd
+	E:\Spiele\CoH2-Mods\BFE\BFE Intermediate Cache\Intermediate Files\attrib\attrib\weapon\west_german\ballistic_weapon\tank_gun\hetzer_75mm.rgd
 TOCEnd
 TOCStart name="locale" alias="locale" path="" relativeroot="locale"
 	FileSettingsStart defverification="crc_blocks" defcompression="stream_compress"
